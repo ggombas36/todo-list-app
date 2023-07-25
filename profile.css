@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --container-height: 600px;
+    --contaier-width: 400px;
+    --header-height: 150px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', monospace;
+}
+html {
+    font-size: 20px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(250, 235, 215);
+    width: var(--contaier-width);
+    height: var(--container-height);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.bi-arrow-left-square-fill{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 45px;
+    height: 40px;
+    font-size: 1.8rem;
+    display: block;
+    cursor: pointer;
+    color: lightgrey;
+}
+.header-text{
+    height: 100px;
+    display: flex;
+    margin-left: 35px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+header {
+    width: 100%;
+    height: var(--header-height);
+    background-image: url('img/venice.jpg');
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.profile-picture{
+    margin-top: 10px;
+    width: 100%;
+}
+.profile-picture img{
+    object-fit: cover;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+}
+.background-picture{
+    margin-top: 10px;
+    width: 100%;
+}
+.background-picture img{
+    margin-top: 10px;
+    width: 414px;
+    height: 276px;
+    background-size: cover;
+}
+
+.input-file {
+    opacity: 0; /* Elrejti az eredeti inputot */
+    position: absolute; /* Pozícionálja az eredeti inputot */
+    height: 10px;
+    display: flex;
+    z-index: -1; /* Helyezi az eredeti inputot a háttérbe */
+    float: right;
+}
+.set-profile {
+    background: linear-gradient(90deg, lightgrey, dimgray);
+    color: white; /* Fehér szöveg */
+    border: 2px solid black;
+    float: right;
+    border-radius: 20px; /* Lekerekített sarkok */
+    font-size: 16px; /* Betűméret */
+    cursor: pointer; /* Mutató kurzor */
+    padding: 10px 20px; /* Némi térköz */
+    display: flex;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.set-background {
+    background: linear-gradient(90deg, lightgrey, dimgray);
+    color: white; /* Fehér szöveg */
+    border: 2px solid black;
+    float: left;
+    border-radius: 20px; /* Lekerekített sarkok */
+    font-size: 16px; /* Betűméret */
+    cursor: pointer; /* Mutató kurzor */
+    padding: 10px 20px; /* Némi térköz */
+    display: flex;
+    margin-left: 5px;
+}
+
+label[for="input-profile"] {
+    background: linear-gradient(90deg, lightgrey, dimgray);
+    color: white; /* Fehér szöveg */
+    border: 2px solid black;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 20px; /* Lekerekített sarkok */
+    padding: 10px 20px; /* Némi térköz */
+    font-size: 16px; /* Betűméret */
+    cursor: pointer; /* Mutató kurzor */
+    display: flex;
+}
+label[for="input-background"] {
+    background: linear-gradient(90deg, lightgrey, dimgray);
+    color: white; /* Fehér szöveg */
+    border: 2px solid black;
+    float: right;
+    border-radius: 20px; /* Lekerekített sarkok */
+    padding: 10px 20px; /* Némi térköz */
+    font-size: 16px; /* Betűméret */
+    cursor: pointer; /* Mutató kurzor */
+    margin-right: 5px;
+}

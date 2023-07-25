@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List In JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <header id="header-background">
+            <div class="header">
+                <div class="dropdown">
+                    <div class="dropdown">
+                        <button onclick="showDropdown()" id="profile-image" class="dropdown-button"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <ul>
+                                <li><a href="profile.html" onclick="handleProfile()">Profile</a></li>
+                                <li><a href="login.html" onclick="handleLogout()">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h2>Type your tasks!</h2>
+                </div>
+            </div>
+            <div class="new-todo">
+                <form id="todoform">
+                    <input type="text" name="newtodo" id="newtodo" placeholder="I will do ..." />
+                    <input type="date" id="myDate"/>
+                    <button type="submit">
+                        <i class="bi bi-plus-square-fill"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <div id="todos-list"></div>
+        <div class="notification"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
