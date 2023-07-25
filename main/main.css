@@ -35,7 +35,7 @@ body {
 header {
   width: 100%;
   height: var(--header-height);
-  background-image: url('img/venice.jpg');
+  background-image: url('venice.jpg');
   background-size: cover;
   border-radius: 5px 5px 0 0;
 }

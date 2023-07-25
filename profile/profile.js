@@ -93,6 +93,6 @@ if (backgroundSet && backgroundSet.startsWith("data:image/")) {
         "  width: 100%;";
     //showProfile.src = adatURI;
 } else {
-    backgroundElement.style.background = "url('img/blank-background.png')";
+    backgroundElement.style.background = "url('../img/blank-background.png')";
     //showProfile.src = 'img/blank-profile.png';
 }
